@@ -1,0 +1,22 @@
+https://stackoverflow.com/questions/31952727/how-can-i-disable-signature-checking-for-firefox-add-ons
+https://stackoverflow.com/questions/47363481/install-a-personal-firefox-web-extension-permanently
+https://github.com/mozilla/web-ext
+https://stackoverflow.com/questions/62237202/firefox-add-ons-how-to-install-my-own-local-add-on-extension-permanently-in-f
+about:addons
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_second_WebExtension
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Modify_a_web_page
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Match_patterns
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_scripts
+https://regex101.com/
+
+
+Steps:
+1) Download the web-ext from github https://github.com/mozilla/web-ext . Requires installing node.js if you don't have it
+2) Follow this link to create an addon: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension
+3) Use about:debugging -> This firefox to test it out
+5)Follow instructions here to sign it: https://linuxconfig.org/how-to-create-package-and-sign-a-firefox-web-extension
+    api key stuff here: https://addons.mozilla.org/en-US/developers/addon/api/key/
+    $ web-ext sign --api-key=<JWT issuer> --api-secret=<JWT secret>
+4) Save add-on in a zip file
+5) Go to "about:addons" in your firefox browser > settings symbol > Install Add-on from file

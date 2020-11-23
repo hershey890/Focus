@@ -1,0 +1,22 @@
+{
+
+    "manifest_version": 2,
+    "name": "modify-page",
+    "version": "1.0",
+    "author": "Hersh Joshi",
+    "description": "Blocks sites for distraction-free work",
+
+    "browser_specific_settings": {
+        "gecko": {
+        "id": "blahblah@blah"
+        }
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.facebook.com/*", "*://*.reddit.com/*", "*://*.instagram.com/*", "*://*.strava.com*"],
+        "js": ["page-eater.js"]
+      }
+    ]
+  
+}
